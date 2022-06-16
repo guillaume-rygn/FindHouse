@@ -28,6 +28,6 @@ Le site est en live ici 👉 [FindHouse](https://guillaume-rygn.github.io/FindHo
 
 
 ## Crédit 🔗
-[Bastien Arlot](https://github.com/Bastien-Arlot)
-[Pierre Sarazin](https://github.com/PierreSARAZIN1)
+[Bastien Arlot](https://github.com/Bastien-Arlot)<br>
+[Pierre Sarazin](https://github.com/PierreSARAZIN1)<br>
 [Guillaume Reygner](https://github.com/guillaume-rygn)
