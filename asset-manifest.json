@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.66c2c75f.css",
+    "main.js": "/static/js/main.f9808cfc.js",
+    "static/media/housecard.jpg": "/static/media/housecard.ed89768f78a7f215aa5d.jpg",
+    "static/media/house.png": "/static/media/house.aa936ff4e939ce580571.png",
+    "static/media/connexionhouse.png": "/static/media/connexionhouse.6643f29dd621541c1c62.png",
+    "static/media/registerhouse.png": "/static/media/registerhouse.348a53746b209f510d68.png",
+    "index.html": "/index.html",
+    "main.66c2c75f.css.map": "/static/css/main.66c2c75f.css.map",
+    "main.f9808cfc.js.map": "/static/js/main.f9808cfc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.66c2c75f.css",
+    "static/js/main.f9808cfc.js"
+  ]
+}
