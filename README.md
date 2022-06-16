@@ -9,7 +9,7 @@ FindHouse<br>
 Nous recherchons pour vous le bien idéal afin de réaliser tous vos projets ! Préprojet final THP - Backend Rails API - Frontend React</h4>
 <br>
 
-![FindHouse](images/banner.png)
+![FindHouse](src/ressources/banner.png)
 
 ## Backend du projet 🗂️
 
