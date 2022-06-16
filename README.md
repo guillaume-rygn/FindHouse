@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href=""><img src="src/ressources/house.png" alt="FindHouse" width="200"></a>
+  <a href="https://guillaume-rygn.github.io/FindHouse/"><img src="src/ressources/house.png" alt="FindHouse" width="200"></a>
   <br>
 FindHouse<br>
 </h1>
@@ -17,7 +17,7 @@ Le backend du projet se trouve ici 👉 [Rails API](https://github.com/PierreSAR
 
 ## WEB version 🌐
 
-Le site est en live ici 👉 [FindHouse]()
+Le site est en live ici 👉 [FindHouse](https://guillaume-rygn.github.io/FindHouse/)
 
 ## Technologies utilisées ⚙️
 
