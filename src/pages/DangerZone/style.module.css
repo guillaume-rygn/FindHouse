@@ -13,21 +13,56 @@
 
 .messagetab{
   display: flex;
-  border: 1px solid black;
+  border: 0.5px solid #969696;
   height: 60vh;
+  border-radius: 15px;
 }
 
 .usertab{
-  border: 1px solid black;
+  border: 0.5px solid #969696;
   height: 56vh;
   width: 16vw;
-  padding: 2vw;
+  padding: 2vh 2vw;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
   overflow-y: scroll;
 }
 
 .contenttab{
-  border: 1px solid black;
+  border: 0.5px solid #969696;
   height: 56vh;
   width: 74vw;
-  padding: 2vw;
+  padding: 2vh 2vw;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.cardrecapmessage{
+  border-bottom: 1px solid #969696;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.cardrecapmessage:hover{
+  background-color: #e0efff;
+}
+
+.messagereceive{
+  padding: 5px 25px;
+  color:black;
+  background-color: #9ecbfc;
+  display: inline-block;
+  border-radius: 10px;
+  position: relative;
+}
+
+.messagereceive::before{
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  width: 0;
+  border-top: 8px solid #9ecbfc;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
 }

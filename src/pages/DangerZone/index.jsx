@@ -14,9 +14,10 @@ const DangerZone = () =>{
   const idparams = useParams().id;
   const [receive, setReceive] = useState([]);
   const [send, setSend] = useState([]);
-  const [alluser, setAlluser] = useState([]);
-
-  const [displaymessage, setDisplaymessage] = useState([]);
+  const [allmessage, setAllmessage] = useState([]);
+  const [sender, setSender] = useState("");
+  const [senderid, setSenderid] = useState("");
+  const [contentsender, setContentsender] = useState("");
 
   useEffect(
     () =>{
@@ -38,7 +39,6 @@ const DangerZone = () =>{
     })
     .then((response) => {return response.json()})
     .then((response) => {
-      console.log(response);
       navigate('/');
     })
   }
@@ -54,9 +54,9 @@ const DangerZone = () =>{
       })
       .then((response) => {return response.json()})
       .then((response) => {
-        setSend(response);
-        console.log(response)
+          setSend(response)
       })
+      
     },[]
   )
 
@@ -71,28 +71,27 @@ const DangerZone = () =>{
       })
       .then((response) => {return response.json()})
       .then((response) => {
-        setReceive(response);
-        console.log(response)
+        setReceive(response)
       })
     },[]
   )
 
-  const fetchuser = () =>{
-    fetch(API_URL + 'users', {
+  const show = (e) =>{
+    fetch(API_URL + 'user/' + e.sender, {
       method: 'get',
       headers: {
+        'Authorization': jwt,
         'Content-Type': 'application/json'
       }
     })
     .then((response) => {return response.json()})
     .then((response) => {
-      setAlluser(response);
-      console.log(response)
+      setSender(response.email);
+      setSenderid(response.id);
+       
     })
   }
-  console.log("fojfeofe")
-  console.log(displaymessage)
-  console.log("fojfeofe")
+  
 
   return(
     <>
@@ -103,7 +102,40 @@ const DangerZone = () =>{
           {deleteaccount()};
         }}>Supprimer mon compte</p>
       </div>
+      <div>
+        <h1>Messagerie</h1>
+        <div className={Style.messagetab}>
+          <div className={Style.usertab}>
+          {receive.map(element =>{
+            if(element.user_id == Number(id)){
+              return(
+                <>
+                  <p key={element.id} className={Style.cardrecapmessage} id={element.sender} onClick={() => {
+                    setContentsender(element.content);
+                    show(element);
+                    }}>{element.content.length > 15? element.content.slice(0,15) + "..." : element.content}</p>
+                </>
+                
+              )
+            }
+            
+          })}
+          </div>
+          <div className={Style.contenttab}>
+            <p><u>mail :</u> {sender}</p>
+            <p><u>content :</u></p>
+            {contentsender == ""? 
+              null
+            :
+              <p className={Style.messagereceive}>{contentsender}</p>
+            }
+          <div>
 
+            </div>
+          </div>
+        </div>
+
+      </div>
     </>
   )
 }

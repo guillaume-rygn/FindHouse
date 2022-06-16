@@ -33,6 +33,10 @@ const MyAdvert = () =>{
       })
     }, [MyAdvert]
   )
+
+ 
+        
+  
     
 
   return(
@@ -41,9 +45,11 @@ const MyAdvert = () =>{
       <Link to={'/customadvert/' + id} className={Style.btn}>Créer une annonce</Link>
       {isLoading ? <p><i className="fa-2x fas fa-circle-notch fa-spin"></i></p> : null}
       <div className={Style.cardlist}>
-        {myadvert.length < 1 ? <p>Vous n'avez pas encore d'annonce posté sur le site !</p> : myadvert.map(advert => {return(
+        {myadvert.length < 1 ? <p>Vous n'avez pas encore d'annonce posté sur le site !</p> : myadvert.map(advert => {
+          return(
           <Card advert={advert} key={advert.id}/>        
-        )})}
+        )
+        })}
       </div>
     </div>
   )
