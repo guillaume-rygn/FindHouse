@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/FindHouse/static/css/main.f24b9977.css",
-    "main.js": "/FindHouse/static/js/main.c1944520.js",
+    "main.css": "/FindHouse/static/css/main.1d2a1246.css",
+    "main.js": "/FindHouse/static/js/main.a1e0350c.js",
     "static/media/housecard.jpg": "/FindHouse/static/media/housecard.ed89768f78a7f215aa5d.jpg",
     "static/media/house.png": "/FindHouse/static/media/house.aa936ff4e939ce580571.png",
     "static/media/connexionhouse.png": "/FindHouse/static/media/connexionhouse.6643f29dd621541c1c62.png",
     "static/media/registerhouse.png": "/FindHouse/static/media/registerhouse.348a53746b209f510d68.png",
     "index.html": "/FindHouse/index.html",
-    "main.f24b9977.css.map": "/FindHouse/static/css/main.f24b9977.css.map",
-    "main.c1944520.js.map": "/FindHouse/static/js/main.c1944520.js.map"
+    "main.1d2a1246.css.map": "/FindHouse/static/css/main.1d2a1246.css.map",
+    "main.a1e0350c.js.map": "/FindHouse/static/js/main.a1e0350c.js.map"
   },
   "entrypoints": [
-    "static/css/main.f24b9977.css",
-    "static/js/main.c1944520.js"
+    "static/css/main.1d2a1246.css",
+    "static/js/main.a1e0350c.js"
   ]
 }
