@@ -1,7 +1,7 @@
 
 <h1 align="center">
   <br>
-  <a href="https://guillaume-rygn.github.io/FindHouse/"><img src="src/ressources/house.png" alt="FindHouse" width="200"></a>
+  <a href="https://guillaume-rygn.github.io/FindHouse/"><img src="src/ressources/house.png" alt="FindHouse" width="400"></a>
   <br>
 FindHouse<br>
 </h1>
