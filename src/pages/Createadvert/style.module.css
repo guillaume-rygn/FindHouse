@@ -1,0 +1,70 @@
+.maincreateadvert{
+  background-color: #e0efff;
+  padding: 30px 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+
+.maincreateadvert input{
+  background-color: #ffffff;
+  display: block;
+  padding: 8px 10px;
+  margin: 5px 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+.maincreateadvert input[type=checkbox]{
+  background-color: #ffffff;
+  display: inline-block;
+  padding: 8px 10px;
+  margin: 5px 8px;
+  border-radius: 8px;
+  border: none;
+}
+
+.maincreateadvert button{
+  margin-left: 8px;
+  background-color: #2178c9;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 12px 15px;
+  cursor: pointer;
+  display: block;
+}
+
+.maincreateadvert label, select{
+  margin-left: 8px;
+}
+
+.maincreateadvert h1{
+  margin-top: 0;
+  text-align: center;
+}
+
+.maincreateadvert form{
+  margin-left: 20px;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flex img{
+  width:500px;
+  height: 100%;
+}
+
+.flexinput{
+  display: flex;
+  align-items: center;
+}
+
+.flexinput i {
+  color: #2178c9;
+  cursor: pointer;
+}

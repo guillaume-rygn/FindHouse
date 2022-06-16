@@ -1,0 +1,25 @@
+.mainmyadvert{
+  background-color: #e0efff;
+  padding: 30px 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  text-align: center;
+}
+
+.cardlist{
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.btn{
+  margin-left: 8px;
+  background-color: #2178c9;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 15px 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,107 @@
+.card{
+  width: 300px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 15px -12px #000000; 
+  box-shadow: 0px 0px 15px -12px #000000;
+  border-radius: 15px;
+  margin: 25px 10px;
+  padding-bottom: 10px;
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+}
+
+.card h4, .card h5{
+  margin: 0;
+}
+
+.card:hover{
+  transform: scale(1.05);
+}
+
+.card h5{
+  margin-left: 10px;
+  margin-top: 2px;
+  margin-bottom: 14px;
+  font-size: 12px;
+}
+
+.card h5 i {
+  color :rgb(145, 145, 145);
+}
+
+.card h5{
+  color :rgb(145, 145, 145);
+  font-weight: 400;
+}
+
+.card p {
+  margin: 0;
+}
+
+.housepicture{
+  width: 300px;
+  height: 200px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.contentcard{
+  margin: 0 10px;
+}
+
+.iconcard{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.card button:first-child{
+  margin-left: 8px;
+  background-color: #2178c9;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 12px 15px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.card button{
+  margin-left: 8px;
+  background-color: #cc130d;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 12px 15px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.flexbtn{
+  display: flex;
+  justify-content: center;
+}
+
+.arrow{
+  position: relative;
+}
+
+.right{
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  color:#ffffff;
+}
+
+.left{
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  color:#ffffff;
+}
+
+.right:hover, .left:hover{
+  color:#2178c9;
+}

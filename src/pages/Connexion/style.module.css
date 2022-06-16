@@ -1,0 +1,46 @@
+.mainconnexion{
+  background-color: #e0efff;
+  padding: 30px 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.mainconnexion form{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.mainconnexion input{
+  background-color: #ffffff;
+  padding: 8px 10px;
+  margin: 0 8px;
+  border-radius: 8px;
+  vertical-align: center;
+  border: none;
+}
+
+.mainconnexion button{
+  margin-left: 8px;
+  background-color: #2178c9;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.mainconnexion h1{
+  margin-top: 0;
+  text-align: center;
+}
+
+.mainconnexion img{
+  margin-top: 50px;
+}
+
+.imgconnexion{
+  display: flex;
+  justify-content: center;
+}

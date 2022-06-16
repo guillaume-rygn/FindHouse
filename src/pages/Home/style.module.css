@@ -1,0 +1,119 @@
+.mainhome{
+  background-color: #e0efff;
+  margin-top: -21px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-bottom: 50px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+@media (min-width: 940px){
+.textflex{
+  max-width: 350px;
+}
+}
+
+@media (max-width: 940px){
+  .textflex{
+    width: 1050px;
+    text-align: center;
+  }
+}
+
+h2{
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+h3{
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+.searchbar{
+  background-color: transparent;
+  margin-top: -50px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.searchbar i{
+  color: rgb(184, 184, 184);
+}
+
+.contentsearchbar{
+  background-color: white;
+  padding: 20px 50px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 15px -9px #000000; 
+  box-shadow: 0px 0px 15px -9px #000000;
+}
+
+.flexinput{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inputbar{
+  background-color: #ececec;
+  padding: 8px 10px;
+  margin: 0 8px;
+  border-radius: 8px;
+  vertical-align: center;
+}
+
+.inputbar input{
+  border: none;
+  background-color: transparent;
+  align-items: center;
+  width: 150px;
+}
+
+.searchbtn{
+  margin-left: 8px;
+  background-color: #2178c9;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 12px 15px;
+  cursor: pointer;
+}
+
+.searchbtn:hover{
+  background-color: #184e80;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.cardlist{
+  max-width: 1200px;
+  margin: 30px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.inputbar select{
+  border: none;
+}
+
+.inputbar select:first-child{
+  color: rgb(128, 128, 128);
+}
+
+.icondelete {
+  cursor: pointer;
+}

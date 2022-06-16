@@ -1,0 +1,77 @@
+.housebanner{
+    background-color: #e0efff;
+    padding: 30px 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.housebanner img{
+  border-radius: 15px;
+  width: clamp(450px, 50vw, 800px);
+  height: auto;
+}
+
+.contentcard{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.iconcard{
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+  border: 1px solid rgb(150, 150, 150);
+  border-radius: 20px;
+  width: clamp(400px,50vw,800px);
+}
+
+.dot{
+  color:rgb(218, 114, 18);
+}
+
+.flex{
+  display: flex;
+  justify-content: center;
+}
+
+.icon{
+  text-align: center;
+}
+
+.flexcard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.center{
+  text-align: center;
+}
+
+.miniimage{
+  width:  150px;
+  height: 100px;
+  object-fit: cover;
+  margin: 5px 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.miniimageselected{
+  width:  144px;
+  height: 94px;
+  object-fit: cover;
+  margin: 5px 5px;
+  border-radius: 10px;
+  border: 3px solid rgb(218, 114, 18);
+}
+
+.mainminiimage{
+  display: block;
+  text-align: center;
+}
+
