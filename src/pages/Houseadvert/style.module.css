@@ -75,3 +75,27 @@
   text-align: center;
 }
 
+.flexinputmessage{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.flexinputmessage textarea{
+  border-radius: 15px;
+  padding: 15px;
+  resize: none;
+  border: 1px solid rgb(177, 177, 177)
+}
+
+.searchbtn{
+  margin-left: 8px;
+  background-color: #2178c9;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  padding: 12px 15px;
+  cursor: pointer;
+}

@@ -44,7 +44,7 @@ const Header = () => {
         :
         <>
           <li><Link to={'/myadvert/' + id}>Mes Annonces</Link></li>
-          <li><Link to={'/profil/' + id}>Danger Zone</Link></li>
+          <li><Link to={'/profil/' + id}>Profil</Link></li>
           <li onClick={logout}>Se Déconnecter</li>
         </>
          

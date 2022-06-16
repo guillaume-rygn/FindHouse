@@ -5,7 +5,7 @@ import { API_URL } from "../../stores/api_url";
 import housepicture from '../../ressources/housecard.jpg';
 import { Link } from "react-router-dom";
 import { useAtomValue } from "jotai";
-import {authorizationAtom} from '../../stores/auth';
+import {authorizationAtom, userAtom} from '../../stores/auth';
 import Card from "../../components/Card";
 
 const Houseadvert = () => {
@@ -14,10 +14,14 @@ const Houseadvert = () => {
   const [house, setHouse] = useState("");
   const [owner, setOwner] = useState("");
   const jwt = useAtomValue(authorizationAtom);
+
+  const iduser=  useAtomValue(userAtom);
   const [isLoading,setIsLoading] = useState(true);
   const [recommandation, setRecommandation] = useState("");
   const navigate = useNavigate();
-  const [picture, setPicture] = useState('')  
+  const [picture, setPicture] = useState('');
+
+  const[message, setMessage] = useState('');
 
 
   useEffect(
@@ -65,6 +69,42 @@ const Houseadvert = () => {
     setPicture(e.target.src)
   }
 
+
+  const sendMessage = (e) =>{
+    e.preventDefault();
+
+    if(message === ""){
+      document.getElementById('error').textContent = "Merci de compléter le champ texte"
+    } else {
+
+ 
+      const data = {
+        "send" :{
+          "content": message,
+          "receiver": owner.id,
+          'user_id': iduser,
+          'advert_id': house.id
+       }
+      };
+
+      fetch(API_URL + '/sends', {
+        method: 'post',
+        headers: {
+         'Authorization': jwt,
+         'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+      .then((response) => response.json())
+      .then((response) => {
+        console.log(response)
+        console.log("message créé");
+        document.getElementById('error').textContent = "Votre message a bien été envoyé";
+        setMessage("");
+      })
+    }
+
+  }
   
   return(
     <>
@@ -118,11 +158,22 @@ const Houseadvert = () => {
 
         <p>Mail du vendeur : {jwt == ""? <span>Merci de vous <Link to="/login"><span className={Style.dot}>connecter</span></Link> pour voir cette information</span> : owner.email}</p>
         <br></br>
+        <p>Envoyer un message instanné au vendeur : {jwt == ""? <span>Merci de vous <Link to="/login"><span className={Style.dot}>connecter</span></Link> pour voir envoyer votre message</span> : 
+        
+        <>
+          <form id="formmessage" onSubmit={sendMessage} className={Style.flexinputmessage}>
+            <textarea rows="5" cols="30" placeholder="Votre message..." value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
+            <button className={Style.searchbtn}>Envoyer mon message</button>
+          </form>
+          <p id="error"></p>
+        </>
+
+        }</p>
+        <br></br>         
       </div>
       <h3 className={Style.center}>Vous aimerez aussi :</h3>
       <div className={Style.flexcard}>
           {recommandation.filter(element => (element.price < house.price + 80000 && element.price > house.price - 80000 && element.id !== house.id) || (element.type == house.type && element.id !== house.id)).slice(0,3).map(advert => {
-          window.scrollTo(0,0);
           return(<Card advert={advert} key={advert.id}/>)
           })}
       </div>

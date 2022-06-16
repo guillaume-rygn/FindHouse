@@ -10,3 +10,24 @@
   color:red;
   cursor: pointer;
 }
+
+.messagetab{
+  display: flex;
+  border: 1px solid black;
+  height: 60vh;
+}
+
+.usertab{
+  border: 1px solid black;
+  height: 56vh;
+  width: 16vw;
+  padding: 2vw;
+  overflow-y: scroll;
+}
+
+.contenttab{
+  border: 1px solid black;
+  height: 56vh;
+  width: 74vw;
+  padding: 2vw;
+}
